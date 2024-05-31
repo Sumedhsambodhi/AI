@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gaming Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to the Gaming Hub</h2>
+            <p>Your one-stop destination for the latest in gaming news, reviews, and more.</p>
+        </section>
+        <section id="games">
+            <h2>Games</h2>
+            <div id="game-list">
+                <div class="game-item" onclick="showGameDetails('game1')">
+                    <h3>Game 1</h3>
+                </div>
+                <div class="game-item" onclick="showGameDetails('game2')">
+                    <h3>Game 2</h3>
+                </div>
+                <div class="game-item" onclick="showGameDetails('game3')">
+                    <h3>Game 3</h3>
+                </div>
+            </div>
+            <div id="game-details">
+                <h3>Game Details</h3>
+                <p id="details-content">Click on a game to see the details.</p>
+            </div>
+        </section>
+        <section id="news">
+            <h2>Latest News</h2>
+            <ul id="news-list">
+                <!-- News items will be populated here -->
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
